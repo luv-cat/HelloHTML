@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML5&CSS3 デザインブック</title>
+    <style type="text/css">
+      /* @mediaで指定した横並びを解除するポイント
+         ブレイクポイントが768px
+       */
+      @media (min-width: 768px){
+        .boxA:after{
+          content: "";
+          display: block;
+          clear: both
+        }
+        .box2{
+          float: left;
+          width:70%
+        }
+        .box3{
+          float: left;
+          width: 30%
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      BOX1
+    </div>
+  <div class="boxA">
+    <div class="box2">
+      BOX2
+    </div>
+    <div class="box3">
+      BOX3
+    </div>
+  </div>
+  </body>
+</html>
