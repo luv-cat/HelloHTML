@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML5&CSS3 デザインブック</title>
+    <style type="text/css">
+      .boxA{
+        border: solid 8px #00a0e9;
+        background-color: #a0e0fe;
+        color: #00a0e9
+      }
+      .boxA:After{
+        content: "これはBOX Aの中に表示確認のために挿入したテキストです。";
+        display: block
+      }
+      /*　カンマで区切ってまとめて指定も可能
+      .box1, .box2, .box3, .box4
+      {
+        float: left;
+        width: 50%
+      }*/
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      BOX1
+    </div>
+    <div class="boxA">
+      <div class="box2">
+        BOX2
+      </div>
+      <div class="box3">
+        BOX3
+      </div>
+    </div>
+    <div class="box4">
+      BOX4
+    </div>
+  </body>
+</html>
