@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML5&CSS3 デザインブック</title>
+    <style type="text/css">
+      /*
+      box color
+      box1 -> #ee82ee
+      box2 -> #f0e68c
+      box3 -> #87cefa
+      box4 -> #98fb98
+      */
+      .box1{
+        background-color:#ee82ee
+      }
+      .box2{
+        background-color:#f0e68c;
+      }
+      .box3{
+        background-color:#87cefa;
+      }
+
+      .boxA::After{
+        content: "";
+        display: block;
+        clear: both
+      }
+      .boxB{
+        border: solid #000080;
+        float: left;
+        width: 80%
+      }
+      .box4{
+        background-color:#98fb98;
+        float: left;
+        width: 20%;
+      }
+
+      /* border: solid #808000; */
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      BOX1
+    </div>
+    <div class="boxA">
+      <div class="boxB">
+        <div class="box2">
+          BOX2
+        </div>
+        <div class="box3">
+          BOX3
+        </div>
+      </div>
+      <div class="box4">
+        BOX4
+      </div>
+    </div>
+  </body>
+</html>
